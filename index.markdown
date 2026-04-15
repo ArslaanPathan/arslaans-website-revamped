@@ -17,7 +17,7 @@ nav_order: 1
   <summary>Read more about me</summary>
   <div markdown="1">
 
-I like computer science, writing stories (sometimes), Linux, FOSS (Free Open-Source Software), hacking, reverse-engineering and iOS jailbreaking. My favorite genre of music is Hyperpop, particularly Hyperpop-Digicore & Hyperpop-Glitchcore. I work on various other projects in web development, system programming, and hardware hacking.
+I like computer science, writing stories (sometimes), Linux, FOSS (Free Open-Source Software), hacking, reverse-engineering and iOS jailbreaking. My favorite genre of music is Hyperpop, particularly Hyperpop-Digicore & Hyperpop-Glitchcore. I work on various projects in web development, system programming, and hardware hacking.
 
 I mainly use Gentoo Linux on my M2 MacBook Pro (thanks to the [Asahi Linux](https://asahilinux.org){: target="_blank" } project) with the MangoWM tiling window manager along with waybar, wofi, swaylock-effects, and more. My favorite games are osu!, Minecraft and Stick Fight: The Game. I’ve been programming and tinkering with devices since somewhere around the age of six. What originally got me into programming was looking at my old iPad 2 (which I still have as of 2025, six years later - it's now jailbroken with [EtasonJB](https://etasonjb.tihmstar.net/){: target="_blank" } because I felt like it) and saying – “how are these apps made?”
 
@@ -31,36 +31,31 @@ Feel free to explore my projects, stories, and achievements, and thanks for stop
 <div class="full-bar bg1">
 <div class="content" markdown="1">
 
-# [Pidjon Enterprises](https://pidjon.arslaancodes.com){: .white target="_blank" }
+# [cinnamon-browser](https://git.arslaancodes.com/cinnamon-browser.git/about/){: .white target="_blank" }
 
-Co-founded a robotics team (aka. me at school: "hey guys i think it'd be cool if we made a robot") consisting of 4 like-minded friends building voice-controlled robotics with custom embedded Linux.
+A lightweight suckless-inspired vimlike browser written in C, powered by WebKit2GTK-4.1 and GTK3.
 
-- Role: Project Lead & Lead Developer
-- Timeline: Oct 2025 - Present
-
----
-
-## Responsibilities
-
-- Designing a secure boot system with dm-verity and A/B OTA updates
-- Building custom embedded Linux distribution for Raspberry Pi 5
-- Designing system architecture for voice recognition and AI integration
-- Managing technical roadmap and coordinating with engineering team
+- Built with: C, GTK3, WebKit2GTK
+- Status: Completed
 
 ---
 
-## Tech Stack
-- Raspberry Pi 5
-- Python
-- Go
-- dm-verity
-- Linux
-- Shell scripting/sh
+## Features
 
-</div>
-</div>
+- Vim-like keybindings
+- Command mode with `:`
+- Quickmarks (similar to ones in qutebrowser)
+- Tabs
+- Hint mode
+- Suckless-style C configuration file (config.h)
 
-<br/>
+---
+
+## Why I built it 
+
+For a while, I was a long-time user of qutebrowser, a popular vim-like browser written in Python and PyQtWebEngine. It was a great browser, and worked very well for my use cases, but eventually, I ran into an issue: the browser was too heavy on my system. Even though (as of 2026-04-15) I have a MacBook Pro M2, which is a powerful machine, I only have 8GB RAM, which, in this digital world, is absolutely nothing. Open too many Chrome tabs? Good luck, mr. OOM killer has come to your doorstep. Because qutebrowser is powered by PyQtWebEngine, which in turn is powered by Chromium, it tends to be quite heavy on my system and eat a lot of RAM.
+
+So, to fix this problem, there was only one proper way. MAKE YOUR OWN BROWSER IN C AND WEBKITGTK!!!!!!!!!!!!!!!!!!!!!!!!!
 
 <div class="full-bar bg2">
 <div class="content" markdown="1">
