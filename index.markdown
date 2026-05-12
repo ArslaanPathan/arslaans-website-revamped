@@ -17,9 +17,9 @@ nav_order: 1
   <summary>Read more about me</summary>
   <div markdown="1">
 
-I like computer science, writing stories (sometimes), Linux, FOSS (Free Open-Source Software), hacking, reverse-engineering and iOS jailbreaking. My favorite genre of music is Hyperpop, particularly Hyperpop-Digicore & Hyperpop-Glitchcore. I work on various projects in web development, system programming, and hardware hacking.
+I like computer science, writing stories (sometimes), Linux, FOSS (Free Open-Source Software), hacking, reverse-engineering and iOS jailbreaking. My favorite genre of music is Hyperpop, particularly Hyperpop-Digicore & Hyperpop-Glitchcore. I work on various projects in low-level development, system programming, and hardware hacking. I'm also active in [Hack Club](https://hackclub.com){: target="_blank" }, a community of over 100,000+ teens around the world who code together. Come join the Slack and say hi!
 
-I mainly use Gentoo Linux on my ThinkPad E16 Gen 3 (Intel Core Ultra 7 255H) with the MangoWM tiling window manager along with waybar, wofi, swaylock-effects, and more. Currently, my dotfiles are not available on Git, but hopefully that will change in the near future. My favorite games are osu!, Minecraft and Stick Fight: The Game. I’ve been programming and tinkering with devices since somewhere around the age of six. What originally got me into programming was looking at my old iPad 2 (which I still have as of 2025, seven years later - it's now jailbroken with [EtasonJB](https://etasonjb.tihmstar.net/){: target="_blank" } because I felt like it) and saying – “how are these apps made?”
+I mainly use Gentoo Linux on my ThinkPad E16 Gen 3 (Intel Core Ultra 7 255H) with the bspwm tiling window manager along with picom, polybar, rofi, i3lock-color, sxhkd, and more. Currently, my dotfiles are not available on Git, but hopefully that will change in the near future. My favorite games are osu!, Minecraft and Stick Fight: The Game. I’ve been programming and tinkering with devices since somewhere around the age of six. What originally got me into programming was looking at my old iPad 2 (which I still have as of 2025, seven years later - it's now jailbroken with [EtasonJB](https://etasonjb.tihmstar.net/){: target="_blank" } because I felt like it) and saying – “how are these apps made?”
 
 
 Feel free to explore my projects, stories, and achievements, and thanks for stopping by!
@@ -30,6 +30,53 @@ Feel free to explore my projects, stories, and achievements, and thanks for stop
 <br/>
 
 <div class="full-bar bg1">
+<div class="content" markdown="1">
+
+# [Saffron](https://git.arslaancodes.com/saffron.git/about/){: .white target="_blank" }
+
+A lightweight, extensible, and dead-simple retained-mode UI framework written in C and SDL3.
+
+- Built with: C, SDL3
+- Status: In development (alpha)
+
+---
+
+## Features
+
+- Retained-mode widget system
+- GL support
+- Extensible and modular
+- Consistent styling across platforms
+
+---
+
+## Why I built it 
+
+I looked at the current state of UI frameworks.
+- GTK: Not very good on platforms other than Linux, and kind of bloated.
+- Qt: Licensing headache, and styling is not consistent across platforms.
+- Dear ImGui: Not retained-mode.
+- Flutter: The toolchain is horrible, Dart sucks, and it's bloated.
+
+And so, as I do, I decided to make my own lightweight and extensible UI framework on top of SDL3.
+
+---
+
+## Notes
+
+There are currently a few things TODO in Saffron, as it is currently in alpha. For this reason, I would not recommend using it in production at the moment.
+
+1. Write documentation
+2. Test for other platforms (just because it theoretically should work, doesn't mean it will)
+3. Add more built-in widgets
+4. Possibly split it into 2 modular parts, SFCore and SFWidgetsBase (?)
+
+</div>
+</div>
+
+<br/>
+
+<div class="full-bar bg2">
 <div class="content" markdown="1">
 
 # [cinnamon-browser](https://git.arslaancodes.com/cinnamon-browser.git/about/){: .white target="_blank" }
@@ -58,12 +105,18 @@ For a while, I was a long-time user of qutebrowser, a popular vim-like browser w
 
 So, to fix this problem, there was only one proper way. MAKE YOUR OWN BROWSER IN C AND WEBKITGTK!!!!!!!!!!!!!!!!!!!!!!!!!
 
+---
+
+## Notes
+
+This project will eventually be deprecated as I plan to rewrite it in Saffron, my UI framework. Why, you might ask? Because who doesn't want to have a custom browser written in their own custom UI framework AND their own custom browser engine bindings for that UI framework?! How, you might ask? I am currently working on WPEWebKit bindings for Saffron, they are available [here](https://git.arslaancodes.com/saffronwebkit.git/about){: target="_blank" }. They are not listed as a project here because they are currently a little bit finicky and I would not be proud to show off a project in this state on my portfolio showcase.
+
 </div>
 </div>
 
 <br/>
 
-<div class="full-bar bg2">
+<div class="full-bar bg4">
 <div class="content" markdown="1">
 
 # [styl1sh.js](https://github.com/RealArslaanYT/styl1sh.js){: .white target="_blank" }
@@ -122,7 +175,7 @@ scratch from temu
 
 <br/>
 
-<div class="full-bar bg4">
+<div class="full-bar bg5">
 <div class="content" markdown="1">
 
 # [Onyx Client](https://github.com/RealArslaanYT/onyx-client-core){: .white target="_blank" }
@@ -152,7 +205,7 @@ No specific reason, I just wanted to get into Minecraft modding at the time and 
 
 <br/>
 
-<div class="full-bar bg5">
+<div class="full-bar bg4">
 <div class="content" markdown="1">
 
 # [BrowserServicePython](https://github.com/RealArslaanYT/BrowserServicePython){: .white target="_blank" }
