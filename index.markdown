@@ -1,7 +1,4 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 title: Home
 layout: base
 head_extra: |
@@ -79,6 +76,45 @@ There are currently a few things TODO in Saffron, as it is currently in alpha. F
 <div class="full-bar bg2">
 <div class="content" markdown="1">
 
+# [SaffronWebKit (SFWK)](https://git.arslaancodes.com/saffronwebkit.git/about/){: .white target="_blank" }
+
+WPEWebKit bindings for Saffron, allowing you to embed webview widgets into any Saffron app with just a few lines of C.
+
+- Built with: C, SDL3, WPEWebKit, GStreamer, EGL
+- Status: Completed - in active development
+
+---
+
+## Features
+
+- Full WebKit browser engine embedded into Saffron
+- Supports Wayland, X11, and even runs in a TTY via SDL3's kmsdrm driver
+- Full audio playback via GStreamer
+- WebGL, HTML5 multimedia, and many other web APIs via WebKit
+
+---
+
+## Why I built it 
+
+When I was building Saffron, I thought it'd be really cool to rewrite cinnamon-browser with it once it was stable. The issue was, it's a custom UI framework, how does one put a browser in it? The answer: just write your own bindings! It can't be that hard... right? Right???? Right...
+
+This took up way too much time and effort than I thought it would.
+
+---
+
+## Notes
+
+While Saffron itself is cross-platform, I cannot guarantee that SFWK will work across platforms because WPEWebKit, the library it is based on, is very much Linux-only.  
+I am also yet to write documentation, but I am currently delaying that until Saffron itself has a stable API, because SFWK is subject to change based on what happens in Saffron's codebase.
+
+</div>
+</div>
+
+<br/>
+
+<div class="full-bar bg4">
+<div class="content" markdown="1">
+
 # [cinnamon-browser](https://git.arslaancodes.com/cinnamon-browser.git/about/){: .white target="_blank" }
 
 A lightweight suckless-inspired vimlike browser written in C, powered by WebKit2GTK-4.1 and GTK3.
@@ -101,7 +137,7 @@ A lightweight suckless-inspired vimlike browser written in C, powered by WebKit2
 
 ## Why I built it 
 
-For a while, I was a long-time user of qutebrowser, a popular vim-like browser written in Python and PyQtWebEngine. It was a great browser, and worked very well for my use cases, but eventually, I ran into an issue: the browser was too heavy on my system. Even though (as of 2026-04-15) I have a MacBook Pro M2, which is a powerful machine, I only have 8GB RAM, which, in this digital world, is absolutely nothing. Open too many Chrome tabs? Good luck, mr. OOM killer has come to your doorstep. Because qutebrowser is powered by PyQtWebEngine, which in turn is powered by Chromium, it tends to be quite heavy on my system and eat a lot of RAM.
+For a while, I was a long-time user of qutebrowser, a popular vim-like browser written in Python and PyQtWebEngine. It was a great browser, and worked very well for my use cases, but eventually, I ran into an issue: the browser was too heavy on my system. Even though back then I used a MacBook Pro M2, which is a powerful machine, I only had 8GB RAM, which, in this digital world, is absolutely nothing. Open too many Chrome tabs? Good luck, mr. OOM killer has come to your doorstep. Because qutebrowser is powered by PyQtWebEngine, which in turn is powered by Chromium, it tends to be quite heavy on my system and eat a lot of RAM.
 
 So, to fix this problem, there was only one proper way. MAKE YOUR OWN BROWSER IN C AND WEBKITGTK!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -109,66 +145,7 @@ So, to fix this problem, there was only one proper way. MAKE YOUR OWN BROWSER IN
 
 ## Notes
 
-This project will eventually be deprecated as I plan to rewrite it in Saffron, my UI framework. Why, you might ask? Because who doesn't want to have a custom browser written in their own custom UI framework AND their own custom browser engine bindings for that UI framework?! How, you might ask? I am currently working on WPEWebKit bindings for Saffron, they are available [here](https://git.arslaancodes.com/saffronwebkit.git/about){: target="_blank" }. They are not listed as a project here because they are currently a little bit finicky and I would not be proud to show off a project in this state on my portfolio showcase.
-
-</div>
-</div>
-
-<br/>
-
-<div class="full-bar bg4">
-<div class="content" markdown="1">
-
-# [styl1sh.js](https://github.com/RealArslaanYT/styl1sh.js){: .white target="_blank" }
-
-A lightweight CSS-in-JS library that makes your styles dynamic.
-
-- Built with: JavaScript
-- Status: Completed
-
----
-
-## Features
-
-- Dynamic, event-based styles: Attach styles to events like `click`, `scroll`, `keydown`, `animationFrame`, and much more.
-- Theme-aware: `styl1sh.runtimeState.currentTheme` reacts to theme changes instantly, providing a seamless experience.
-- Minimal & Fast: Tiny footprint, no dependencies.
-- Familiar syntax: With stylesheet syntax almost identical to CSS, you can learn to use styl1sh.js easily.
-
----
-
-## Why I built it 
-
-I was browsing the web when I found an old concept from late 1996, titled JSSS, which stood for "JavaScript-based Style Sheets". It's goal was to implement dynamic and adjustable stylesheets in JavaScript using simple but powerful syntax.  
-I found this concept really cool, and was somewhat sad that it wasn't taken into the modern web. The only web browser known to make some implementation of it was Netscape Navigator, and, we all know that Netscape doesn't really exist anymore.  
-So, I did the only sane thing: I just made it myself! My concept for the syntax is quite different and more modernized to add event handlers and hooks, but the idea is about the same.
-
-</div>
-</div>
-
-<br/>
-
-<div class="full-bar bg3">
-<div class="content" markdown="1">
-
-# [SCR4TCH](/links-page/scr4tch/){: .white }
-A modification of Scratch that allows you to parse JSON, send HTTP requests, and a few extras. Mainly created as a side-project.
-
-- Built with: Node.js, React
-- Status: Completed
-
----
-
-## Features
-
-- HTTP Requests in Scratch via the custom `HTTP Requests` extension
-- JSON Parsing in Scratch via the custom `JSON Parse` extension
-
----
-
-## Why I built it
-
-scratch from temu
+This project will eventually be deprecated as I plan to rewrite it in Saffron, my UI framework. Why, you might ask? Because who doesn't want to have a custom browser written in their own custom UI framework AND their own custom browser engine bindings for that UI framework?! How, you might ask? With SFWK, of course! Did you not read the project listings above?
 
 </div>
 </div>
@@ -205,58 +182,4 @@ No specific reason, I just wanted to get into Minecraft modding at the time and 
 
 <br/>
 
-<div class="full-bar bg4">
-<div class="content" markdown="1">
-
-# [BrowserServicePython](https://github.com/RealArslaanYT/BrowserServicePython){: .white target="_blank" }
-A lightweight remote browser service written in Python. Allows you to access a remote browser in a browser window. Mainly created as a side-project.
-
-- Built with: Python, JavaScript/WebSockets
-- Status: Completed
-
----
-
-## Features
-
-- Responsive remote browser feed
-- Very lightweight --- one .html file for the frontend, one .py file for the backend.
-- Easy deployment using Docker
-
----
-
-## Why I built it 
-
-Like some of my other projects, there's no specific reason, I just felt like it.
-
-</div>
-</div>
-
 <br/>
-
-<div class="full-bar bg2">
-<div class="content" markdown="1">
-
-# [Showdown of the Sticks](https://realarslaanyt.github.io/Showdown-Of-The-Sticks){: .white target="_blank" }
-A fast-paced, pixel-art style stick figure fighting game.
-
-- Built with: SDL2, C++, Lua
-- Status: In-progress (pretty much abandoned)
-
----
-
-## Features
-
-- Fast-paced stick figure combat
-- Retro pixel-art aesthetic (artwork not finished)
-- Local multiplayer support
-- Online multiplayer support (in development)
-- Unique weapons and abilities (in development)
-
----
-
-## Why I built it 
-
-"If Animation VERSUS will take too long to release, then FINE, ILL DO IT MYSELF!!!!!!!!!!" - me, 2025
-
-</div>
-</div>
