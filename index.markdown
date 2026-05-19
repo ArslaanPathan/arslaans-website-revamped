@@ -13,8 +13,7 @@ nav_order: 1
 <details class="about-me">
   <summary>Read more about me</summary>
   <div markdown="1">
-
-I like computer science, writing stories (sometimes), Linux, FOSS (Free Open-Source Software), hacking, reverse-engineering and iOS jailbreaking. My favorite genre of music is Hyperpop, particularly Hyperpop-Digicore & Hyperpop-Glitchcore. I work on various projects in low-level development, system programming, and hardware hacking. I'm also active in [Hack Club](https://hackclub.com){: target="_blank" }, a community of over 100,000+ teens around the world who code together. Come join the Slack and say hi!
+I like computer science, writing stories (sometimes), Linux, FOSS (Free Open-Source Software), hacking, reverse-engineering and iOS jailbreaking. My favorite colour is yellow, and my favorite genre of music is Hyperpop, particularly Hyperpop-Digicore & Hyperpop-Glitchcore. I work on various projects in low-level development, system programming, and hardware hacking. I'm also active in [Hack Club](https://hackclub.com){: target="_blank" }, a community of over 100,000+ teens around the world who code together. Come join the Slack and say hi!
 
 I mainly use Gentoo Linux on my ThinkPad E16 Gen 3 (Intel Core Ultra 7 255H) with the bspwm tiling window manager along with picom, polybar, rofi, i3lock-color, sxhkd, and more. Currently, my dotfiles are not available on Git, but hopefully that will change in the near future. My favorite games are osu!, Minecraft and Stick Fight: The Game. I’ve been programming and tinkering with devices since somewhere around the age of six. What originally got me into programming was looking at my old iPad 2 (which I still have as of 2025, seven years later - it's now jailbroken with [EtasonJB](https://etasonjb.tihmstar.net/){: target="_blank" } because I felt like it) and saying – “how are these apps made?”
 
@@ -155,31 +154,65 @@ This project will eventually be deprecated as I plan to rewrite it in Saffron, m
 <div class="full-bar bg5">
 <div class="content" markdown="1">
 
-# [Onyx Client](https://github.com/RealArslaanYT/onyx-client-core){: .white target="_blank" }
+# [FrenchToastOS](https://git.arslaancodes.com/FrenchToastOS.git/about/){: .white target="_blank" }
 
-A modern, feature-packed client for Minecraft 1.21.5, designed to enhance the user experience with a variety of Quality of Life improvements and intuitive features. Mainly created as a side-project.
+A simple from-scratch OS for x86 systems written in C.
 
-- Built with: Fabric, Java
-- Status: Completed
+- Built with: C, x86 Assembly, Makefile
+- Status: In-progress
 
 ---
 
 ## Features
-- 1.8-style Combat
-- Coordinates HUD
-- Keystrokes HUD
-- Freelook
-- Mod state saving
+- Framebuffer support (via GRUB)
+- Can render text via 8x8 font
+- Takes PS/2 keyboard input
 
 --- 
 
 ## Why I built it 
 
-No specific reason, I just wanted to get into Minecraft modding at the time and thought it'd be a fun project.
+This was originally for [Boot](https://boot.hackclub.com){: target="_blank"}, a Hack Club YSWS (You Ship, We Ship), but I may or may not have gotten distracted with other projects...  
+I might continue working on FrenchToastOS, but I have no guarantees.
 
 </div>
 </div>
 
 <br/>
 
-<br/>
+<div class="full-bar bg3">
+<div class="content" markdown="1">
+
+# [zwzn-freefit-re](https://git.arslaancodes.com/zwzn-freefit-re.git/about/){: .white target="_blank" }
+
+Reverse-engineering of sketchy Chinese watches
+
+- Built with: jadx, reading Java source code, Markdown, Python, bleak
+- Status: Completed (inactive)
+
+---
+
+## Features
+- Documents the protocol used by an app to communicate with a BLE smartwatch in-depth
+
+--- 
+
+## Why I built it 
+
+There is a better and longer explanation in the Git repo's README itself, but to keep it short:
+- I had a sketchy watch from the arcade 
+- The original app was spyware 
+- I still wanted to use the watch 
+- I reverse-engineered it 
+- And then I may have broke it...
+
+---
+
+## Notes 
+
+I also wrote a small Android companion app for these watches, as a replacement to the original. I can no longer add more features or test anything in relations to reverse-engineering or the companion app, because I may or may not have broke the watch...  
+You can find the companion app [here](https://git.arslaancodes.com/zwzn-freefit-android.git){: target="_blank"}.
+
+</div>
+</div>
+
